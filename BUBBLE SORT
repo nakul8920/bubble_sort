@@ -1,0 +1,12 @@
+BUBBLE SORT.
+import array
+from array import *
+def swap_pairwise(arr):
+    n=len(arr)
+    for i in range(0, n-1):
+        for j in range (0, n-i-1):
+            if arr[j]>arr[j+1]:
+                arr[j],arr[j+1]=arr[j+1],arr[j]
+array1 = array('i',[23,87,56,76,21,90,1])
+swap_pairwise(array1)
+print(array1)
